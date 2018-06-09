@@ -1,0 +1,15 @@
+﻿<Window x:Class="HoplonGuessingGame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HoplonGuessingGame"
+        mc:Ignorable="d"
+        Title="Guessing Game" Height="226.596" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="169" Width="772" TextAlignment="Center" FontSize="24"><Run Text="Think about an animal..."/></TextBlock>
+        <Button Content="OK" HorizontalAlignment="Left" Margin="122,101,0,0" VerticalAlignment="Top" Width="134" Height="55" FontSize="24"/>
+        <Button Content="Cancel" HorizontalAlignment="Left" Margin="537,101,0,0" VerticalAlignment="Top" Width="134" Height="55" FontSize="24" Click="Button_Click"/>
+
+    </Grid>
+</Window>

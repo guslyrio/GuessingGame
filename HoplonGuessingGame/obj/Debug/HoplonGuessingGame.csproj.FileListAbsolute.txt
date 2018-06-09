@@ -1,0 +1,15 @@
+C:\Users\brasil\source\repos\HoplonGuessingGame\HoplonGuessingGame\bin\Debug\HoplonGuessingGame.exe.config
+C:\Users\brasil\source\repos\HoplonGuessingGame\HoplonGuessingGame\bin\Debug\HoplonGuessingGame.exe
+C:\Users\brasil\source\repos\HoplonGuessingGame\HoplonGuessingGame\bin\Debug\HoplonGuessingGame.pdb
+C:\Users\brasil\source\repos\HoplonGuessingGame\HoplonGuessingGame\obj\Debug\HoplonGuessingGame.csprojAssemblyReference.cache
+C:\Users\brasil\source\repos\HoplonGuessingGame\HoplonGuessingGame\obj\Debug\MainWindow.g.cs
+C:\Users\brasil\source\repos\HoplonGuessingGame\HoplonGuessingGame\obj\Debug\App.g.cs
+C:\Users\brasil\source\repos\HoplonGuessingGame\HoplonGuessingGame\obj\Debug\HoplonGuessingGame_MarkupCompile.cache
+C:\Users\brasil\source\repos\HoplonGuessingGame\HoplonGuessingGame\obj\Debug\HoplonGuessingGame_MarkupCompile.lref
+C:\Users\brasil\source\repos\HoplonGuessingGame\HoplonGuessingGame\obj\Debug\MainWindow.baml
+C:\Users\brasil\source\repos\HoplonGuessingGame\HoplonGuessingGame\obj\Debug\HoplonGuessingGame.g.resources
+C:\Users\brasil\source\repos\HoplonGuessingGame\HoplonGuessingGame\obj\Debug\HoplonGuessingGame.Properties.Resources.resources
+C:\Users\brasil\source\repos\HoplonGuessingGame\HoplonGuessingGame\obj\Debug\HoplonGuessingGame.csproj.GenerateResource.cache
+C:\Users\brasil\source\repos\HoplonGuessingGame\HoplonGuessingGame\obj\Debug\HoplonGuessingGame.csproj.CoreCompileInputs.cache
+C:\Users\brasil\source\repos\HoplonGuessingGame\HoplonGuessingGame\obj\Debug\HoplonGuessingGame.exe
+C:\Users\brasil\source\repos\HoplonGuessingGame\HoplonGuessingGame\obj\Debug\HoplonGuessingGame.pdb
