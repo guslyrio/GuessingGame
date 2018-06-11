@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Forms;
+using Microsoft.VisualBasic;
 
 namespace HoplonGuessingGame
 {
@@ -66,11 +69,8 @@ namespace HoplonGuessingGame
         {
             if (this.IsQuestion())
             {
-                //Console.WriteLine(this.message);
-                //Console.Write("Enter 'y' for yes and 'n' for no: ");
-                //char input = getYesOrNo(); //y or n
-                bool input = true;
-                if (input)
+                MessageBoxResult result = System.Windows.MessageBox.Show("Does the animal that you tought about " + this.GetQuestion() + "?", "Guessing Game", MessageBoxButton.YesNo);
+                if (result == MessageBoxResult.Yes)
                     this.yes.Query();
                 else
                     this.no.Query();
@@ -81,43 +81,34 @@ namespace HoplonGuessingGame
 
         public void OnQueryObject()
         {
-            //Console.WriteLine("Are you thinking of a(n) " + this.question + "?");
-            //Console.Write("Enter 'y' for yes and 'n' for no: ");
-            //char input = getYesOrNo(); //y or n
-            bool input = true;
-            if (input)
+            MessageBoxResult result = System.Windows.MessageBox.Show("Are you thinking about a " + this.GetQuestion() + "?", "Guessing Game", MessageBoxButton.YesNo);
+            if (result == MessageBoxResult.Yes)
             {
-                //Console.Write("The Computer Wins\n");
+                System.Windows.MessageBox.Show("I won.\n", "Guessing Game");                
             }
             else
             {
-                Console.Write("You win! What were you thinking of?");
-                string userAnimal = Console.ReadLine();
-                Console.Write("Please enter a question to distinguish a(n) "
-                    + this.question + " from " + userAnimal + ": ");
-                string userQuestion = Console.ReadLine();
-                Console.Write("If you were thinking of a(n) " + userAnimal
-                    + ", what would the answer to that question be?");
-                input = true;//getYesOrNo(); //y or n
-
-                this.UpdateTree(userAnimal, input);
+                this.UpdateTree();                
             }
         }
 
-        private void UpdateTree(String userQuestion, bool answer)
+        private void UpdateTree()
         {
-            if (answer)
-            {
-                this.no = new Node(this.question);
-                this.yes = new Node(userQuestion);
-            }
-            else
-            {
-                this.yes = new Node(this.question);
-                this.no = new Node(userQuestion);
-            }
-            Console.Write("Thank you my knowledge has been increased");
-            this.SetQuestion(userQuestion);
+            string animal ="";
+            DialogResult userAnimalResult = InputDialog.Show("What was the animal that you tought about?", "Guessing Game", ref animal);
+
+            string question = "";
+            DialogResult userQuestionResult = InputDialog.Show("A " + animal + "______ but a " + this.GetQuestion() + " does not (Fill it with an animal trait, like lives in water", "Guessing Game", ref question);
+            this.no = new Node(this.question);
+            this.yes = new Node(animal);
+            //}
+            //else
+            //{
+            //    this.yes = new Node(this.question);
+            //    this.no = new Node(userQuestion);
+            //}
+            System.Windows.MessageBox.Show("Thank you I am getting smarter!", "Guessing Game");
+            this.SetQuestion(question);            
         }
     }
 }
